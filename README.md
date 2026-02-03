@@ -1,3 +1,5 @@
+Short description of Fairsharer:
+
 We are creating a small algorithm for fair redistribution. In each iteration, the largest value gives a fraction of itself to both neighboring elements.
 
 Examples:
