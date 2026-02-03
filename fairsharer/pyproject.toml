@@ -9,7 +9,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 authors = [
-    { name = "Alice Bob", email = "laura.grozdanic@study.hs-duesseldorf.de" }
+    { name = "Laura Grozdanic", email = "laura.grozdanic@study.hs-duesseldorf.de" }
 ]
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
