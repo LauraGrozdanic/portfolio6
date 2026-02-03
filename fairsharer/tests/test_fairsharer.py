@@ -1,24 +1,6 @@
-"""Tests for the fairsharer.my_module module.
-"""
-import pytest
-
-from fairsharer.my_module import hello
+from fairsharer.fairsharer import fair_sharer
 
 
-def test_hello():
-    assert hello("Alice") == "Hello Alice!"
-
-
-def test_hello_with_error():
-    with pytest.raises(ValueError) as excinfo:
-        hello("nobody")
-    assert "Cannot say hello to nobody" in str(excinfo.value)
-
-
-@pytest.fixture
-def some_name():
-    return "Jane Smith"
-
-
-def test_hello_with_fixture(some_name):
-    assert hello(some_name) == "Hello Jane Smith!"
+def test_fair_sharer():
+    assert fair_sharer([0, 1000, 800, 0], 1) == [100.0, 800.0, 900.0, 0.0]
+    assert fair_sharer([0, 1000, 800, 0], 2) == [100.0, 890.0, 720.0, 90.0]
