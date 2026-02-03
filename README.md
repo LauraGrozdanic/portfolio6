@@ -1,8 +1,8 @@
-## How to use fairsharer
+We are creating a small algorithm for fair redistribution. In each iteration, the largest value gives a fraction of itself to both neighboring elements.
 
-Short description of package
-
-The project setup is documented in [project_setup.md](project_setup.md). Feel free to remove this document (and/or the link to this document) if you don't need it.
+Examples:
+fair_sharer([0, 1000, 800, 0], 1) --> [100, 800, 900, 0]
+fair_sharer([0, 1000, 800, 0], 2) --> [100, 800, 720, 90]
 
 ## Installation
 
