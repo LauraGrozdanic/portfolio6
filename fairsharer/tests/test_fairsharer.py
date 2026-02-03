@@ -1,4 +1,4 @@
-from fairsharer.fairsharer import fair_sharer
+from portfolio6.fairsharer.fairsharer import fair_sharer
 
 
 def test_fair_sharer():
